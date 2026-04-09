@@ -19,10 +19,22 @@ main {
   padding: 2rem;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 #message {
   font-size: 2.5rem;
   font-weight: 600;
   letter-spacing: -0.02em;
+  animation: fadeInUp 0.8s ease forwards;
 }
 
 #message.error {
